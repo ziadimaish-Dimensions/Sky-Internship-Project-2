@@ -8,6 +8,7 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
 import { VacationRequestsComponent } from './components/vacation-requests/vacation-requests.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EmployeeCardComponent } from "./components/employee-card/employee-card.component";
+import {ProfileVacationComponent} from "./components/profile-vacation/profile-vacation.component";
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { EmployeeCardComponent } from "./components/employee-card/employee-card.
     ImageSliderComponent,
     VacationRequestsComponent,
     FooterComponent,
+    ProfileVacationComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

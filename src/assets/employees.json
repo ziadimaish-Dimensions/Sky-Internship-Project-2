@@ -5,7 +5,7 @@
     "submittedOn": "2023-01-01T00:00:00Z",
     "duration": "2 Weeks",
     "salary": 5000,
-    "image": "assets/images/john_doe.jpg"
+    "image": "https://via.placeholder.com/80"
   },
   {
     "id": 2,
@@ -13,6 +13,168 @@
     "submittedOn": "2023-02-15T00:00:00Z",
     "duration": "1 Week",
     "salary": 3000,
-    "image": "assets/images/jane_smith.jpg"
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "submittedOn": "2023-03-10T00:00:00Z",
+    "duration": "3 Days",
+    "salary": 2000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "submittedOn": "2023-04-05T00:00:00Z",
+    "duration": "1 Month",
+    "salary": 7000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 5,
+    "name": "Charlie Davis",
+    "submittedOn": "2023-05-20T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 4500,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 6,
+    "name": "Diana Evans",
+    "submittedOn": "2023-06-15T00:00:00Z",
+    "duration": "10 Days",
+    "salary": 3500,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 7,
+    "name": "Ethan Foster",
+    "submittedOn": "2023-07-01T00:00:00Z",
+    "duration": "1 Week",
+    "salary": 3000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 8,
+    "name": "Fiona Green",
+    "submittedOn": "2023-08-10T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 5000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 9,
+    "name": "George Harris",
+    "submittedOn": "2023-09-05T00:00:00Z",
+    "duration": "3 Weeks",
+    "salary": 6000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 10,
+    "name": "Hannah White",
+    "submittedOn": "2023-10-01T00:00:00Z",
+    "duration": "1 Week",
+    "salary": 3200,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 11,
+    "name": "Ian King",
+    "submittedOn": "2023-11-15T00:00:00Z",
+    "duration": "2 Days",
+    "salary": 1500,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 12,
+    "name": "Jack Lee",
+    "submittedOn": "2023-12-01T00:00:00Z",
+    "duration": "1 Month",
+    "salary": 7000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 13,
+    "name": "Karen Martinez",
+    "submittedOn": "2023-01-20T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 4800,
+    "image": "https://via.placeholder.com/80"
+  },
+  {
+    "id": 14,
+    "name": "Liam Nelson",
+    "submittedOn": "2023-02-10T00:00:00Z",
+    "duration": "1 Week",
+    "salary": 3100,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 15,
+    "name": "Mia Perez",
+    "submittedOn": "2023-03-05T00:00:00Z",
+    "duration": "3 Days",
+    "salary": 2000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 16,
+    "name": "Noah Quinn",
+    "submittedOn": "2023-04-01T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 4500,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 17,
+    "name": "Olivia Roberts",
+    "submittedOn": "2023-05-10T00:00:00Z",
+    "duration": "1 Week",
+    "salary": 3000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 18,
+    "name": "Paul Scott",
+    "submittedOn": "2023-06-05T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 5000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 19,
+    "name": "Quinn Taylor",
+    "submittedOn": "2023-07-01T00:00:00Z",
+    "duration": "1 Month",
+    "salary": 7000,
+    "image": "https://via.placeholder.com/80"
+
+  },
+  {
+    "id": 20,
+    "name": "Rachel Walker",
+    "submittedOn": "2023-08-15T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 4800,
+    "image": "https://via.placeholder.com/80"
+
   }
 ]
