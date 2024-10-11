@@ -1,6 +1,20 @@
 <div class="card employee-card m-3">
   <div class="card-body">
     <!-- Employee Image -->
+    <div class="card employee-card m-3">
+      <div class="card-body">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            [checked]="selected"
+            (change)="toggleSelection($event)"
+          />
+        </div>
+        <!-- Rest of the card -->
+      </div>
+    </div>
+
     <div class="text-center">
       <img
         [src]="employee.image"

@@ -1,13 +1,25 @@
+// src/app/app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Employee } from './models/employee.model';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true
 })
 export class AppComponent {
-  title = 'sky-internship-project-2';
+  currentUser: Employee = {
+    id: 0,
+    name: 'Ziad Imaish',
+    submittedOn: new Date(),
+    duration: '',
+    salary: 0,
+    image: 'https://via.placeholder.com/80',
+  };
+
+  handleNewRequest(): void {
+    // Handle new request action, e.g., navigate to a form or open a modal
+    console.log('New Request Clicked');
+  }
 }

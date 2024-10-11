@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12">
+    <input
+      type="checkbox"
+      [checked]="allSelected"
+      (change)="toggleSelectAll($event)"
+    />
+    Select All
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-4 mb-4" *ngFor="let employee of paginatedEmployees">
+    <app-employee-card
+      [employee]="employee"
+      [searchTerm]="searchTerm"
+      (approve)="onApprove($event)"
+      (decline)="onDecline($event)"
+      [selected]="selectedEmployees.includes(employee)"
+    ></app-employee-card>
+  </div>
+</div>

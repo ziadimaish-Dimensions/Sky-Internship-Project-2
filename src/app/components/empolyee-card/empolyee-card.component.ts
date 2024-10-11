@@ -10,7 +10,8 @@ import { Employee } from '../../models/employee.model';
 export class EmployeeCardComponent {
   @Input() employee!: Employee;
   @Input() searchTerm: string = '';
-
+  @Input() selected: boolean = false;
+  @Output() selectionChange = new EventEmitter<boolean>();
   @Output() approve = new EventEmitter<Employee>();
   @Output() decline = new EventEmitter<Employee>();
 
@@ -19,4 +20,11 @@ export class EmployeeCardComponent {
     const regex = new RegExp(`(${search})`, 'gi');
     return text.replace(regex, '<mark>$1</mark>');
   }
+
+
+  toggleSelection(event: Event): void {
+    const isChecked = (event.target as HTMLInputElement).checked;
+    this.selectionChange.emit(isChecked);
+  }
+
 }
