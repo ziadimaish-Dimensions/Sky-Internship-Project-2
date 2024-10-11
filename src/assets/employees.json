@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "submittedOn": "2023-01-01T00:00:00Z",
+    "duration": "2 Weeks",
+    "salary": 5000,
+    "image": "assets/images/john_doe.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "submittedOn": "2023-02-15T00:00:00Z",
+    "duration": "1 Week",
+    "salary": 3000,
+    "image": "assets/images/jane_smith.jpg"
+  }
+]

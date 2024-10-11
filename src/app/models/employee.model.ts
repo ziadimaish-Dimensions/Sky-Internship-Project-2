@@ -1,7 +1,7 @@
 export interface Employee {
   id: number;
   name: string;
-  submittedOn: Date;
+  submittedOn: string;
   duration: string;
   salary: number;
   image: string;
