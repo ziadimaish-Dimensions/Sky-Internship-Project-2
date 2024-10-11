@@ -1,24 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { EmployeeService } from '../../services/employee.service';
 import { Employee } from '../../models/employee.model';
-import {EmployeeCardComponent} from "../empolyee-card/empolyee-card.component";
-
+import { CommonModule } from '@angular/common';
+import { HighlightPipe } from '../../pipes/highlight.pipe';
+import { PaginationComponent } from '../pagination/pagination.component';
+import { FormsModule } from '@angular/forms';
+import { EmployeeCardComponent } from '../employee-card/employee-card.component';
 @Component({
   selector: 'app-vacation-requests',
   templateUrl: './vacation-requests.component.html',
-  styleUrl: './vacation-requests.component.css',
+  styleUrls: ['./vacation-requests.component.css'],
+  standalone: true,
   imports: [
-    EmployeeCardComponent
-  ],
-  standalone: true
+    CommonModule,
+    EmployeeCardComponent,
+    HighlightPipe,
+    PaginationComponent,
+    FormsModule,
+  ], // Import necessary modules and components
 })
-export class VacationRequestsComponent implements OnInit {
+export class VacationRequestsComponent implements OnInit, DoCheck {
   employees: Employee[] = [];
   filteredEmployees: Employee[] = [];
   paginatedEmployees: Employee[] = [];
   searchTerm: string = '';
   currentPage: number = 1;
   itemsPerPage: number = 15;
+  selectedEmployees: Employee[] = [];
+  allSelected: boolean = false;
 
   constructor(private employeeService: EmployeeService) {}
 
@@ -30,7 +39,7 @@ export class VacationRequestsComponent implements OnInit {
     });
   }
 
-  ngOnChanges(): void {
+  ngDoCheck(): void {
     this.applyFilter();
   }
 
@@ -71,7 +80,25 @@ export class VacationRequestsComponent implements OnInit {
     console.log('Declined:', employee);
   }
 
-  ngDoCheck(): void {
-    this.applyFilter();
+  toggleSelectAll(event: Event): void {
+    const isChecked = (event.target as HTMLInputElement).checked;
+    this.allSelected = isChecked;
+    if (isChecked) {
+      this.selectedEmployees = [...this.filteredEmployees];
+    } else {
+      this.selectedEmployees = [];
+    }
+  }
+
+  onSelectionChange(employee: Employee, isSelected: boolean): void {
+    if (isSelected) {
+      this.selectedEmployees.push(employee);
+    } else {
+      this.selectedEmployees = this.selectedEmployees.filter(
+        (e) => e.id !== employee.id
+      );
+    }
+    this.allSelected =
+      this.selectedEmployees.length === this.filteredEmployees.length;
   }
 }

@@ -1,10 +1,12 @@
 import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule],
 })
 export class PaginationComponent implements OnChanges {
   @Input() totalItems: number = 0;

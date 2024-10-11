@@ -2,8 +2,8 @@
   <div class="carousel-inner">
     <div
       class="carousel-item"
-      *ngFor="let slide of slides; let isActive = first"
-      [class.active]="isActive"
+      *ngFor="let slide of slides; let isFirst = first"
+      [class.active]="isFirst"
     >
       <img [src]="slide.image" class="d-block w-100" alt="{{ slide.title }}" />
       <div class="carousel-caption d-none d-md-block">

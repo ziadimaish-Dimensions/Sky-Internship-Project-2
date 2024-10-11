@@ -1,5 +1,6 @@
 // src/app/components/image-slider/image-slider.component.ts
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule
 
 interface Slide {
   image: string;
@@ -11,7 +12,8 @@ interface Slide {
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule],
 })
 export class ImageSliderComponent {
   slides: Slide[] = [

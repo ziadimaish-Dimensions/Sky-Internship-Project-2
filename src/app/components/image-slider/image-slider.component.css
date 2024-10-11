@@ -1,0 +1,21 @@
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: left;
+}
+
+.carousel-caption h5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+}
