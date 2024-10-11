@@ -17,7 +17,7 @@ import { EmployeeCardComponent } from '../employee-card/employee-card.component'
     HighlightPipe,
     PaginationComponent,
     FormsModule,
-  ], // Import necessary modules and components
+  ],
 })
 export class VacationRequestsComponent implements OnInit, DoCheck {
   employees: Employee[] = [];
@@ -25,7 +25,7 @@ export class VacationRequestsComponent implements OnInit, DoCheck {
   paginatedEmployees: Employee[] = [];
   searchTerm: string = '';
   currentPage: number = 1;
-  itemsPerPage: number = 15;
+  itemsPerPage: number = 3;
   selectedEmployees: Employee[] = [];
   allSelected: boolean = false;
 

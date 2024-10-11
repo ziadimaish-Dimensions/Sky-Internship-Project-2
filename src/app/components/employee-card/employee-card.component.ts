@@ -1,4 +1,3 @@
-// src/app/components/employee-card/employee-card.component.ts
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Employee } from "../../models/employee.model";
@@ -13,11 +12,11 @@ import { Employee } from "../../models/employee.model";
 export class EmployeeCardComponent {
   @Input() employee!: Employee;
   @Input() searchTerm: string = '';
-  @Input() selected: boolean = false; // Ensure this is present
+  @Input() selected: boolean = false;
 
   @Output() approve = new EventEmitter<Employee>();
   @Output() decline = new EventEmitter<Employee>();
-  @Output() selectionChange = new EventEmitter<boolean>(); // Ensure this is present
+  @Output() selectionChange = new EventEmitter<boolean>();
 
   getHighlightedText(text: string, search: string): string {
     if (!search) return text;
