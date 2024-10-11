@@ -1,0 +1,25 @@
+.welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.request-btn {
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid green;
+  transition: all 0.3s ease;
+}
+
+.request-btn:hover,
+.request-btn:focus {
+  background-color: white;
+  color: green;
+  border-color: green;
+}
+
+.request-btn:active {
+  transform: scale(0.95);
+}

@@ -9,7 +9,7 @@ import { VacationHistory } from '../models/vacation-history.model';
   providedIn: 'root',
 })
 export class EmployeeService {
-  private apiUrl = 'assets/data'; // Assuming JSON files are in assets/data
+  private apiUrl = 'assets/data';
 
   constructor(private http: HttpClient) {}
 
@@ -25,5 +25,5 @@ export class EmployeeService {
     return this.http.get<VacationHistory[]>(`${this.apiUrl}/vacation-history.json`);
   }
 
-  // Add methods for adding, updating, deleting data as necessary
+
 }

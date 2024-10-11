@@ -1,1 +1,41 @@
-<p>empolyee-card works!</p>
+<div class="card employee-card m-3">
+  <div class="card-body">
+    <!-- Employee Image -->
+    <div class="text-center">
+      <img
+        [src]="employee.image"
+        class="rounded-circle mb-3"
+        alt="Employee Image"
+        width="100"
+        height="100"
+      />
+    </div>
+
+    <!-- Employee Name with highlighted search term -->
+    <h5 class="card-title text-center">
+      <span [innerHTML]="getHighlightedText(employee.name, searchTerm)"></span>
+    </h5>
+
+    <!-- Submitted On -->
+    <p class="text-muted mb-0">Submitted on:</p>
+    <p class="fw-bold text-dark">{{ employee.submittedOn | date:'MM/dd/yyyy' }}</p>
+
+    <!-- Duration -->
+    <p class="text-muted mb-0">Duration:</p>
+    <p class="fw-bold text-dark">{{ employee.duration }}</p>
+
+    <!-- Salary -->
+    <p class="text-muted mb-0">Salary:</p>
+    <p class="fw-bold text-dark">{{ employee.salary | currency:'AED' }}</p>
+
+    <!-- Buttons for Approve/Decline -->
+    <div class="d-flex justify-content-center mt-3">
+      <button class="btn btn-outline-danger btn-sm me-2" (click)="decline.emit(employee)">
+        Decline
+      </button>
+      <button class="btn btn-success btn-sm" (click)="approve.emit(employee)">
+        Approve
+      </button>
+    </div>
+  </div>
+</div>
